@@ -173,6 +173,8 @@ function Order({ closeHour, openHour }) {
   );
 }
 
+/*
+
 // React v18
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -180,6 +182,6 @@ root.render(
     <App />
   </React.StrictMode>
 );
-
+*/
 // React before 18
 // ReactDOM.render(<App />, document.getElementById("root"));

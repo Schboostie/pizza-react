@@ -1,18 +1,26 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import "./index.css";
 
 function App() {
-  return <div>
-<h1>Hello React</h1>
- < Pizza />
-  < Pizza />
-   < Pizza />
+  return (
+    <div>
+      <Header />
+      <Pizza />
+      <Pizza />
+      <Pizza />
+    </div>
+  );
+}
 
-  </div>
-
- ;
-
+function Header() {
+  const style = { color: "red", fontSize: "48px", textTransform: "uppercase" };
+  return <h1 style={style}>Fast React Pizza Co.</h1>;
+}
 /*
+
+
+
 
 a deaclarative approach is use
 to tell the ui what to look like
@@ -25,10 +33,14 @@ function Pizza() {
   return <h2>Pizza</h2>;
 }
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));
 
+/*
+// React v18
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.strictMode>
+  <React.StrictMode>
     <App />
-  </React.strictMode>
+  </React.StrictMode>
 );
+*/
